@@ -141,6 +141,6 @@ Scrimba React Course
 
 
 
- #License
-MIT License © 2025 [Your Name]
+ # License
+MIT License © 2025 Godswill
 
