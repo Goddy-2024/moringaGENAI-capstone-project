@@ -44,24 +44,19 @@ You’ll build a **Login → Profile** workflow where a user logs in, their data
   http://localhost:5173/
 ```
 ## Result:
- You can access the login form →Enter your username & password → switch between login & signup
+ You can access the login form →Enter your username & password → switch between login & signup. In this example of discussing state we focus on the **ability of the user to switch between a login form or a signup form**. When the user already has an account, the **LoginForm is rendered** whereas when the user doesn't have an account, therefore he/she needs to create one the **SignUp form is rendered** in the page instead, this is only possible by the state `isAccount` which is initialized to false at first, to **track the having Account property** therefore rendering the SignUp form, If the user already has an account and clicks the `"Already have an account text?"`, It triggers the `setIsAccount` state setter function which switches the property of isAccount to true therefore rendering the LoginForm.
 
 ### AI Prompts Used (Documentation Reference)
-These are the conceptual prompts used to guide learning, not implementation directly.
+These are the conceptual prompts used to guide learning, not implementation directly to get code.
 You can reuse them for classroom teaching or self-learning:
 Learning Goal
 Prompt
-Concept Learned
 Local State
 ```bash
-“How can I capture user data in a login form using useState?”
-Controlled components
-```
+“I am a beginner using react for the first time and I want to Implement a feature in my App where the user can switch between having an account to login and not having an account to sign up, Please: 1. Show me what react feature in state I should implement 2. By the use of a minimal example show me how sate is shared between the parent and child components 3. Show me how a child component can switch state that is owned by a parent component”
 
-Lifting State
-```bash
-“How can I make user data accessible to multiple components?”
-Parent-child communication
+Concept learnt: state-management
+
 ```
 Prop Drilling
 ```bash
@@ -124,11 +119,6 @@ Official Docs
 - React useState Hook
 
 
-- React Context API
-
-
-- React Router
-
 
 Recommended Tutorials
 freeCodeCamp: React State Management Explained
@@ -144,4 +134,3 @@ Scrimba React Course
  # License
 MIT License © 2025 Godswill
 
->>>>>>> 55ed1573a126255a45b90463f82dbe1d6ec074be
